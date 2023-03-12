@@ -5,7 +5,7 @@ export default function HomePage () {
 
     const [value, setValue] = useState("");
     const handleButtonClick = () => {
-        setValue(document.getElementById("textfield").value);
+        setValue(document.getElementById("textarea").value);
 
     }
 
@@ -21,7 +21,7 @@ export default function HomePage () {
                 <p><center>Text</center></p>
                 <div class="wrapper">
                 <div class = "textArea"><center>
-                    <input type="text" id="textfield" />
+                    <textarea id="textarea"></textarea>
                     </center>
                 </div>    
                 </div>
