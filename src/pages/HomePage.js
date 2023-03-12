@@ -79,9 +79,12 @@ export default function HomePage () {
                 <p class="bolded">Text</p>
                 <div class="wrapper">
                 <div class = "textArea"><center>
-                    <textarea id="textarea"></textarea>
-                    </center>
-                </div>   
+                    {listening ? 
+                    <textarea id="textarea" value={transcript}></textarea> : 
+                    <textarea id="textarea" ></textarea> }
+                </center>
+                </div> 
+
                 </div>
                 <br></br> 
                 <button onClick={handleButtonClick} class="btn">Summarize</button>
