@@ -20,7 +20,7 @@ export default function HomePage () {
     
     }
 
-    const handleSumaryClick = () => {
+    const handleSummaryClick = () => {
         function textToSpeech(text) {
             let utterance = new SpeechSynthesisUtterance(text);
             const voices = synth.getVoices();
@@ -30,7 +30,6 @@ export default function HomePage () {
             synth.speak(utterance);
         }
         textToSpeech(summary)
-        
     }
  
     const {
@@ -70,8 +69,8 @@ export default function HomePage () {
         <>
         <div class="row">   
             <div class="header">
-                <h1>summaRiff</h1>
-                <p>A text-to-speech & speech-to-text summarizer</p>
+                <h1>speechLess</h1>
+                <p>A text-to-speech & speech-to-text summarizing tool</p>
             </div>
             
             <div class="column left"> 
@@ -80,7 +79,7 @@ export default function HomePage () {
                 <p class="bolded">Text</p>
                 <div class="wrapper">
                 <div class = "textArea"><center>
-                    <textarea id="textarea" value={transcript}></textarea>
+                    <textarea id="textarea"></textarea>
                     </center>
                 </div>   
                 </div>
@@ -88,9 +87,9 @@ export default function HomePage () {
                 <button onClick={handleButtonClick} class="btn">Summarize</button>
                 <div>
                     <span>
-                       listening:
+                       Listening:
                        {' '}
-                       {listening ? 'on' : 'off'}
+                       {listening ? 'On' : 'Off'}
                     </span>
                     <div>
                        <button type="button" onClick={resetTranscript}>Reset</button>
@@ -113,7 +112,7 @@ export default function HomePage () {
                 <br></br>
                 <div class="button">
                     <form action="#">
-                        <button onClick={handleSumaryClick} class="btn">Speaker Button</button>
+                        <button onClick={handleSummaryClick}class="btn">Read Text</button>
                     </form>
                 </div>
             </center></div>

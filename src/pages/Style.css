@@ -88,6 +88,7 @@
   #text {
     white-space: pre-wrap; /* allow line breaks to occur within the text */
     word-wrap: break-word; /* break words that are too long to fit on one line */
+    font-size: large;
   }
 
  .btn { 
