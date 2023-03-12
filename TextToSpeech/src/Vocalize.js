@@ -6,6 +6,10 @@ let isSpeaking = true;
 
 function textToSpeech(text) {
   let utterance = new SpeechSynthesisUtterance(text);
+  const voices = synth.getVoices();
+  const microsoftEnglishVoice = voices.find((voice) => voice.name === "Microsoft Mark - English (United States)");
+  utterance.voice = microsoftEnglishVoice;
+  utterance.volume = 1;
   synth.speak(utterance);
 }
 
