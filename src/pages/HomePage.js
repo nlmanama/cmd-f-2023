@@ -89,6 +89,7 @@ export default function HomePage () {
                 <br></br> 
                 <button onClick={handleButtonClick} class="btn">Summarize</button>
                 <div class="listening">
+                    <br></br>
                     <span>
                        Listening:
                        {' '}
@@ -99,11 +100,17 @@ export default function HomePage () {
                        <button type="button" class="bttn" onClick={listenContinuously}>Listen</button>
                        <button type="button" class="bttn" onClick={SpeechRecognition.stopListening}>Stop</button>
                     </div>
+
                 </div>
             </center>
+                    <br></br>
+                    <br></br>
+                <p style={{textAlign: "left", marginLeft: "5px"}}>Powered by</p>
+                <img id="logo" src={require('../public/cohere.png')} alt="cohere.png" title="Cohere"/>
             </div>
             
             <div class="column right"> <center>
+                <img id="image" src={require('../public/arrow.png')} alt="arrow.png" title="Cohere"/>
                 <br></br>
                 <p class="bolded">Summary</p>   
                 <script src="Vocalize.js"></script>
