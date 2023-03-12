@@ -29,11 +29,12 @@ export default function HomePage () {
             </center></div>
             
             <div class="column right"> <center>
-                <p><center>Summary</center></p>
-            
+                <p><center>Summary</center></p>   
                 <script src="Vocalize.js"></script>
                 <div class="wrapper">
-                <p>{value}</p>
+                <div id = "printed">
+                    <p id="text">{value}</p>
+                </div> 
                 </div>
 
                 <div class="button">

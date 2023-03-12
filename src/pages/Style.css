@@ -55,6 +55,17 @@
     border: 0;
     resize: none;
   }
+  #printed {
+    width: 350px; /* set the width of the container to a fixed size */
+    height: 390px; /* set the height of the container to a fixed size */
+    text-align: justify;
+    overflow: auto; /* hide any content that overflows the container */
+  }
+  
+  #text {
+    white-space: pre-wrap; /* allow line breaks to occur within the text */
+    word-wrap: break-word; /* break words that are too long to fit on one line */
+  }
   .wrapper form{
     margin: 35px 0 20px;
   }
