@@ -1,12 +1,22 @@
 import React, {useState} from "react";
 import "./Style.css";
 
+
+
 export default function HomePage () {
 
     const [value, setValue] = useState("");
-    const handleButtonClick = () => {
-        setValue(document.getElementById("textarea").value);
+    const [summary, setSummary] = useState("");
 
+    const handleButtonClick = async () => {
+        setValue(document.getElementById("textarea").value);
+        const response=await fetch("http://localhost:3000",{
+            method:"POST",
+            body:value,
+        })
+        const sum = await response.text()
+        setSummary(sum);
+    
     }
 
     return (
@@ -36,7 +46,7 @@ export default function HomePage () {
                 <script src="Vocalize.js"></script>
                 <div class="wrapper">
                 <div id = "printed">
-                    <p id="text">{value}</p>
+                    <p id="text">{summary}</p>
                 </div> 
                 </div>
                 <br></br>
