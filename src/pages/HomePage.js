@@ -18,28 +18,31 @@ export default function HomePage () {
             </div>
             
             <div class="column left"> <center>
-                <p><center>Text</center></p>
+                <br></br>
+                <p class="bolded">Text</p>
                 <div class="wrapper">
                 <div class = "textArea"><center>
                     <textarea id="textarea"></textarea>
                     </center>
-                </div>    
+                </div>   
                 </div>
-                <button onClick={handleButtonClick}>Summarize</button>
+                <br></br> 
+                <button onClick={handleButtonClick} class="btn">Summarize</button>
             </center></div>
             
             <div class="column right"> <center>
-                <p><center>Summary</center></p>   
+                <br></br>
+                <p class="bolded">Summary</p>   
                 <script src="Vocalize.js"></script>
                 <div class="wrapper">
                 <div id = "printed">
                     <p id="text">{value}</p>
                 </div> 
                 </div>
-
+                <br></br>
                 <div class="button">
                     <form action="#">
-                        <button>Speaker Button</button>
+                        <button class="btn">Speaker Button</button>
                     </form>
                 </div>
             </center></div>
