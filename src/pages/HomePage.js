@@ -88,7 +88,7 @@ export default function HomePage () {
                 </div>
                 <br></br> 
                 <button onClick={handleButtonClick} class="btn">Summarize</button>
-                <div>
+                <div class="listening">
                     <span>
                        Listening:
                        {' '}
