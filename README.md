@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+## Inspiration
+Our project is inspired by sustainability and accessibility. We are empowered to bring about inclusiveness to improve social sustainability, economic sustainability, and bring equal opportunities. Our application allows for both a speech-to-text and text-to-speech summarization. In this way, our application enables people with disabilities, e.g., the visually impaired, people who are unable to speak, individuals with dyslexia, and people with ADHD. Furthermore, it allows users to use their time more efficiently and allocate time to tasks that are more important.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What it does
+Our web application tool provides a speech-to-text and text-to-speech summarization. It allows user to input text into a dialog box or speak aloud information that can be then summarized and displayed as text or played as audio.
 
-## Available Scripts
+## How we built it   
+We used Figma for the UX design and built the front end of the page using React.js. With the help of Co-here's API, we are able to summarize paragraphs and implement a text-to-speech as well as a speech-to-text feature in our project.
 
-In the project directory, you can run:
+## Challenges we ran into  
+Most of us are not fond of front-end development using JavaScript so we spent a long time trying to figure out how to implement our Figma prototype into reality without constantly bothering the mentors within a 5 km radius.
 
-### `npm start`
+## Accomplishments that we're proud of  
+We had no prior experience in dealing with API or using React so being able to finish a product within 24 hours is huge accomplishment to us. The idea of doing speech-to-text and text-to-speech seemed tricky to us at first, but with researching and implementing it turned out to be pretty simple but it was also a good learning curve. We are also proud of our AI implementation (NLP) using Cohere.AI in this project.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## What we learned  
+In the span of less than 23 hours (thanks daylight savings), we have figured out how to build a working webpage from scratch and embedded a fascinating API from a fascinating company to our page that we hope would benefit a lot of people and bring inclusivity towards technology.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## What's next for speechLess    
+In the future, we would love to make it more accessible for people from all backgrounds to use our technology and increase its inclusivity by allowing a mobile implementation for speechLess.
