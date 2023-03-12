@@ -1,7 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Style.css";
 
 export default function HomePage () {
+
+    const [value, setValue] = useState("");
+    const handleButtonClick = () => {
+        setValue(document.getElementById("textfield").value);
+
+    }
+
     return (
         <>
         <div class="row">   
@@ -13,14 +20,15 @@ export default function HomePage () {
             <div class="column left"> <center>
                 <p><center>Text</center></p>
                 <div class="wrapper">
-                <textarea></textarea>
+                <div class = "textArea"><center>
+                    <input type="text" id="textfield" />
+                    </center>
+                </div>    
                 </div>
+                <button onClick={handleButtonClick}>Summarize</button>
+                    <p>Value: {value}</p>
 
-                <div class="button">
-                    <form action="#">
-                        <button>Summarize</button>
-                    </form>
-                </div>
+
             </center></div>
             
             <div class="column right"> <center>
