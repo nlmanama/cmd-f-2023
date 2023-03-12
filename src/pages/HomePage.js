@@ -26,9 +26,6 @@ export default function HomePage () {
                 </div>    
                 </div>
                 <button onClick={handleButtonClick}>Summarize</button>
-                    <p>Value: {value}</p>
-
-
             </center></div>
             
             <div class="column right"> <center>
@@ -36,6 +33,7 @@ export default function HomePage () {
             
                 <script src="Vocalize.js"></script>
                 <div class="wrapper">
+                <p>{value}</p>
                 </div>
 
                 <div class="button">
