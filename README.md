@@ -1,3 +1,5 @@
+# speechLess
+
 ## Inspiration
 Our project is inspired by sustainability and accessibility. We are empowered to bring about inclusiveness to improve social sustainability, economic sustainability, and bring equal opportunities. Our application allows for both a speech-to-text and text-to-speech summarization. In this way, our application enables people with disabilities, e.g., the visually impaired, people who are unable to speak, individuals with dyslexia, and people with ADHD. Furthermore, it allows users to use their time more efficiently and allocate time to tasks that are more important.
 
