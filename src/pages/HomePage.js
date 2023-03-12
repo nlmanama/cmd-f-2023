@@ -1,7 +1,6 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
+import SpeechRecognition, { useSpeechRecognition } from "react-speech-recognition";
 import "./Style.css";
-
-
 
 export default function HomePage () {
 
@@ -18,6 +17,39 @@ export default function HomePage () {
         setSummary(sum);
     
     }
+ 
+    const {
+        transcript,
+        interimTranscript,
+        finalTranscript,
+        resetTranscript,
+        listening,
+    } = useSpeechRecognition();
+ 
+    useEffect(() => {
+    if (finalTranscript !== '') {
+        console.log('Got final result:', finalTranscript);
+    }
+    }, [interimTranscript, finalTranscript]);
+ 
+ 
+    if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
+        return null;
+    }
+ 
+ 
+    if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
+        console.log('Browser does not support speech recognition. Try Chrome desktop, maybe?');
+    }
+ 
+ 
+    const listenContinuously = () => {
+        SpeechRecognition.startListening({
+            continuous: true,
+            language: 'en-US',
+        });
+    };
+ 
 
     return (
         <>
@@ -27,18 +59,32 @@ export default function HomePage () {
                 <p>A text-to-speech & speech-to-text summarizer</p>
             </div>
             
-            <div class="column left"> <center>
+            <div class="column left"> 
+            <center>
                 <br></br>
                 <p class="bolded">Text</p>
                 <div class="wrapper">
                 <div class = "textArea"><center>
-                    <textarea id="textarea"></textarea>
+                    <textarea id="textarea" value={transcript}></textarea>
                     </center>
                 </div>   
                 </div>
                 <br></br> 
                 <button onClick={handleButtonClick} class="btn">Summarize</button>
-            </center></div>
+                <div>
+                    <span>
+                       listening:
+                       {' '}
+                       {listening ? 'on' : 'off'}
+                    </span>
+                    <div>
+                       <button type="button" onClick={resetTranscript}>Reset</button>
+                       <button type="button" onClick={listenContinuously}>Listen</button>
+                       <button type="button" onClick={SpeechRecognition.stopListening}>Stop</button>
+                    </div>
+                </div>
+            </center>
+            </div>
             
             <div class="column right"> <center>
                 <br></br>
