@@ -77,6 +77,7 @@ export default function HomePage () {
             <center>
                 <br></br>
                 <p class="bolded">Text</p>
+                <img id="microphone" src={require('../public/microphone.png')} alt="microphone.png" title="microphone"/>
                 <div class="wrapper">
                 <div class = "textArea"><center>
                     {listening ? 
@@ -110,9 +111,10 @@ export default function HomePage () {
             </div>
             
             <div class="column right"> <center>
-                <img id="image" src={require('../public/arrow.png')} alt="arrow.png" title="Cohere"/>
+                <img id="arrow" src={require('../public/arrow.png')} alt="arrow.png" title="arrow"/>
                 <br></br>
-                <p class="bolded">Summary</p>   
+                <p class="bolded">Summary</p>
+                <img id="speaker" src={require('../public/speaker.png')} alt="speaker.png" title="speaker"/>   
                 <script src="Vocalize.js"></script>
                 <div class="wrapper">
                 <div id = "printed">

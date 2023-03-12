@@ -128,10 +128,28 @@
     width: 100px;
     height: 50px;} 
 
-#image {
+#arrow {
     position: relative;
     position: absolute;
     left:470px;
     top:400px;
     width: 300px;
     height: 225px;}
+
+#microphone {
+    position: relative;
+    position: absolute;
+    left:455px;
+    top:125px;
+    width: 30px;
+    height: 30px;
+}
+
+#speaker {
+    position: relative;
+    position: absolute;
+    left:1055px;
+    top:125px;
+    width: 30px;
+    height: 30px;
+}
