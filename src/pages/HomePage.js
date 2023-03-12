@@ -2,6 +2,8 @@ import React, {useEffect, useState} from "react";
 import SpeechRecognition, { useSpeechRecognition } from "react-speech-recognition";
 import "./Style.css";
 
+let synth = speechSynthesis;
+
 export default function HomePage () {
 
     const [value, setValue] = useState("");
@@ -16,6 +18,18 @@ export default function HomePage () {
         const sum = await response.text()
         setSummary(sum);
     
+    }
+
+    const handleSummaryClick = () => {
+        function textToSpeech(text) {
+            let utterance = new SpeechSynthesisUtterance(text);
+            const voices = synth.getVoices();
+            const microsoftEnglishVoice = voices.find((voice) => voice.name === "Microsoft Mark - English (United States)");
+            utterance.voice = microsoftEnglishVoice;
+            utterance.volume = 1;
+            synth.speak(utterance);
+        }
+        textToSpeech(summary)
     }
  
     const {
@@ -98,7 +112,7 @@ export default function HomePage () {
                 <br></br>
                 <div class="button">
                     <form action="#">
-                        <button class="btn">Speaker Button</button>
+                        <button onClick={handleSummaryClick}class="btn">Speaker Button</button>
                     </form>
                 </div>
             </center></div>
