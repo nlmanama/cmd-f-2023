@@ -13,11 +13,13 @@
 .left {
     width: 50%;
     background-color: #BECEC7;
+    height: 100vh;
 }
 
 .right {
     width: 50%;
     background-color: #5A726B;
+    height: 100vh;
 }
 
 .row:after {
@@ -25,3 +27,4 @@
     display: table;
     clear: both;
   }
+
