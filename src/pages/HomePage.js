@@ -95,9 +95,9 @@ export default function HomePage () {
                        {listening ? 'On' : 'Off'}
                     </span>
                     <div>
-                       <button type="button" onClick={resetTranscript}>Reset</button>
-                       <button type="button" onClick={listenContinuously}>Listen</button>
-                       <button type="button" onClick={SpeechRecognition.stopListening}>Stop</button>
+                       <button type="button" class="bttn" onClick={resetTranscript}>Reset</button>
+                       <button type="button" class="bttn" onClick={listenContinuously}>Listen</button>
+                       <button type="button" class="bttn" onClick={SpeechRecognition.stopListening}>Stop</button>
                     </div>
                 </div>
             </center>
